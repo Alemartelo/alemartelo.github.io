@@ -8,7 +8,7 @@ dp = Dispatcher(bot)
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     markup = types.ReplyKeyboardMarkup()
-    markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://vk.com/audios250287675')))
+    markup.add(types.KeyboardButton('Открыть веб страницу', web_app=WebAppInfo(url='https://alemartelo.github.io/')))
     await message.answer('qq',reply_markup=markup)
 
 
